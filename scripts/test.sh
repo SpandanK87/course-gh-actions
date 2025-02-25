@@ -14,7 +14,7 @@ if [ -z "${{ secrets.GH_REPOSITORY }}" ]; then
     exit 1
 fi
 
-# Extract owner and repo from GITHUB_REPOSITORY
+# Extract owner and repo from GITHUB_REPOSITORY.
 OWNER=$(echo ${{ secrets.GH_REPOSITORY }} | cut -d'/' -f1)
 REPO=$(echo ${{ secrets.GH_REPOSITORY }} | cut -d'/' -f2)
 
