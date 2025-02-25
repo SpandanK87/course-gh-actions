@@ -30,6 +30,7 @@ jobs:
       - name: Run test script
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
         run: |
           chmod +x ./scripts/test.sh
           ./scripts/test.sh
