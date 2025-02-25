@@ -14,7 +14,7 @@ if [ -z "$GH_REPOSITORY" ]; then
     exit 1
 fi
 
-# Extract owner and repo from GH_REPOSITORY
+# Extract owner and repo from GH_REPOSITORY...
 OWNER=$(echo $GH_REPOSITORY | cut -d'/' -f1)
 REPO=$(echo $GH_REPOSITORY | cut -d'/' -f2)
 
