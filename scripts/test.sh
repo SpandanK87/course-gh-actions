@@ -24,7 +24,7 @@ API_URL="https://api.github.com/repos/$OWNER/$REPO/commits"
 # Fetch all commits
 echo "Fetching commits from $GH_REPOSITORY..."
 curl -s -H "Authorization: token $GH_TOKEN" "$API_URL" | \
-    jq -r '.[] | "Commit: \(.sha)\nAuthor: \(.commit.author.name)\nDate: \(.commit.author.date)\nMessage: \(.commit.message)\n--------------------------------"'
+    jq -r '.[] | "Commit: \(.sha)\nAuthor: \(.commit.author.name)\nDate: \(.commit.author.date)\nMessage: \(.commit.message)\n----------------------------------------------------------"'
 
 # Check if the curl command was successful
 if [ $? -ne 0 ]; then
