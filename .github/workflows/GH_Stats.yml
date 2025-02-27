@@ -7,9 +7,9 @@ on:
   # schedule:
   #   - cron: "*/5 * * * *"
   push:
-    paths: 
-      - 'scripts/test.sh'
-      - 'workflows/GH_Stats.yml'
+    # paths: 
+    #   - 'scripts/test.sh'
+    #   - 'workflows/GH_Stats.yml'
   workflow_dispatch: 
     
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
