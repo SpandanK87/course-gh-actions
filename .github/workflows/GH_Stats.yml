@@ -31,4 +31,4 @@ jobs:
         run: |
           chmod +x ./scripts/test.sh
           ./scripts/test.sh
-          gh run list
+          gh run list -w "GH Commit Stats"
