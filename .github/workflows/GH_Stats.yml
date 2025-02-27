@@ -33,3 +33,6 @@ jobs:
           # chmod +x ./scripts/test.sh
           # ./scripts/test.sh
           gh run list -w "GH Commit Stats"
+      - name: Get typescript version
+        run: |
+          npx tsc --version
