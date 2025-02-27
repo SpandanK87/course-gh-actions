@@ -29,6 +29,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPOSITORY: ${{ github.repository }}
         run: |
-          chmod +x ./scripts/test.sh
-          ./scripts/test.sh
+          # chmod +x ./scripts/test.sh
+          # ./scripts/test.sh
           gh run list -w "GH Commit Stats"
