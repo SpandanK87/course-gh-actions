@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: test
+name: GH Commit Stats
 
 # Controls when the workflow will run
 on:
@@ -9,6 +9,7 @@ on:
   push:
     paths: 
       - 'scripts/test.sh'
+      - 'workflows/test.yml'
   workflow_dispatch: 
     
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
