@@ -31,3 +31,4 @@ jobs:
         run: |
           chmod +x ./scripts/test.sh
           ./scripts/test.sh
+          gh run list
